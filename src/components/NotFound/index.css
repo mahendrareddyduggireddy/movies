@@ -21,9 +21,9 @@
   padding: 0px;
   cursor: pointer;
 }
-.para-style {
-  font-size: 16px;
-  font-family: 'Monoto';
+.para {
+  font-size: 20px;
+  font-family: 'Roboto';
   color: whitesmoke;
 }
 .heading {

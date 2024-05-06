@@ -1,5 +1,6 @@
 import './index.css'
 import {Component} from 'react'
+import {Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
 
 class Login extends Component {
@@ -14,21 +15,21 @@ class Login extends Component {
   }
 
   submitFunc = async event => {
-    const {username, password} = this.state
     event.preventDefault()
+    const {username, password} = this.state
     const url = 'https://apis.ccbp.in/login'
+    const object = {username, password}
     const options = {
       method: 'POST',
-      body: JSON.stringify({username, password}),
+      body: JSON.stringify(object),
     }
     const response = await fetch(url, options)
     const data = await response.json()
     if (response.ok) {
+      this.setState({em: false})
       Cookies.set('jwt_token', data.jwt_token, {expires: 30})
       const {history} = this.props
       history.replace('/')
-      this.setState({em: false})
-      console.log(data)
     } else {
       const errorMessage = data.error_msg
       this.setState({errMsg: errorMessage, em: true})
@@ -38,6 +39,9 @@ class Login extends Component {
 
   render() {
     const {username, password, errMsg, em} = this.state
+    if (Cookies.get('jwt_token') !== undefined) {
+      return <Redirect to="/" />
+    }
     return (
       <div className="login-container">
         <img

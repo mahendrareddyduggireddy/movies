@@ -2,13 +2,19 @@ import './index.css'
 import {Link, withRouter} from 'react-router-dom'
 import {HiOutlineSearch} from 'react-icons/hi'
 
-const Header = props => {
-  const {history} = props
-  const searchFunction = () => {
-    history.replace('/search')
-  }
+const SearchHeader = props => {
+  const {history, inputFunc, userInput, searchFunc} = props
+
   const AccountFunction = () => {
     history.replace('/account')
+  }
+
+  const inpFunc = event => {
+    inputFunc(event)
+  }
+
+  const searchFunction = () => {
+    searchFunc()
   }
 
   return (
@@ -27,9 +33,21 @@ const Header = props => {
         </Link>
       </div>
       <div className="items-container">
-        <button type="button" onClick={searchFunction} className="search-style">
-          <HiOutlineSearch />
-        </button>
+        <div className="input-search">
+          <input
+            type="search"
+            onChange={inpFunc}
+            value={userInput}
+            className="search-input-style"
+          />
+          <button
+            type="button"
+            onClick={searchFunction}
+            className="search-icon"
+          >
+            <HiOutlineSearch />
+          </button>
+        </div>
         <button
           type="button"
           onClick={AccountFunction}
@@ -44,4 +62,4 @@ const Header = props => {
     </nav>
   )
 }
-export default withRouter(Header)
+export default withRouter(SearchHeader)

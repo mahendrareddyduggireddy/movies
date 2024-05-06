@@ -39,6 +39,7 @@ label {
 
 .submit-style {
   align-self: flex-end;
+  cursor: pointer;
   height: 32px;
   width: 105px;
   background-color: blue;
