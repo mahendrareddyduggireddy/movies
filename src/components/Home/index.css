@@ -8,6 +8,15 @@
   padding-left: 100px;
   padding-right: 100px;
 }
+.spinner-container {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
 .footer {
   display: flex;
   flex-direction: column;
