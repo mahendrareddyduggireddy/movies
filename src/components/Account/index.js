@@ -11,7 +11,9 @@ const Account = props => {
   }
   return (
     <div className="account-route--container">
-      <Header />
+      <div className="account-header">
+        <Header />
+      </div>
       <div className="account-container">
         <h1 className="account-head">Account</h1>
         <hr />

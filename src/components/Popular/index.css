@@ -5,20 +5,25 @@
   justify-content: space-between;
   min-height: 100vh;
   background-color: black;
+  padding: 15px;
 }
 .popular-ul-container {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   width: 100%;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
 }
 .popular-li-container {
-  height: 150px;
-  width: 150px;
-  margin: 10px;
+  height: 180px;
+  width: 180px;
+  margin: 9px;
+  border-style: solid;
+  border-radius: 17px;
+  border-color: white;
+  border-width: 1px;
 }
 .popular-image-container {
   height: 100%;

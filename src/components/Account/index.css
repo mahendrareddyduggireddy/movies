@@ -5,6 +5,9 @@
   align-items: flex-start;
   height: 100vh;
 }
+.account-header {
+  background-color: black;
+}
 .account-footer-container {
   background-color: black;
 }

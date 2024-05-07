@@ -57,7 +57,7 @@ class Search extends Component {
           </div>
         ) : (
           <>
-            {moviesList.length === 0 && (
+            {moviesList.length === 0 && moviesList !== '' && (
               <div className="empty-container">
                 <img
                   src="https://res.cloudinary.com/dxqfqtqnl/image/upload/v1714987545/Group_73941x_ncyhex.png"
@@ -66,6 +66,7 @@ class Search extends Component {
                 <p>Your search for {userInput} did not find any matches.</p>
               </div>
             )}
+            {moviesList === '' && null}
             {moviesList.length > 0 && (
               <ul className="ul-container">
                 {moviesList.map(each => (
