@@ -1,5 +1,6 @@
 import './index.css'
 import {Component} from 'react'
+import {Link} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
 import Header from '../Header'
@@ -53,13 +54,15 @@ class Popular extends Component {
           <>
             <ul className="popular-ul-container">
               {popularList.map(each => (
-                <li className="popular-li-container" key={each.id}>
-                  <img
-                    src={each.posterPath}
-                    alt={each.title}
-                    className="popular-image-container"
-                  />
-                </li>
+                <Link to={`/movies/${each.id}`}>
+                  <li className="popular-li-container" key={each.id}>
+                    <img
+                      src={each.posterPath}
+                      alt={each.title}
+                      className="popular-image-container"
+                    />
+                  </li>
+                </Link>
               ))}
             </ul>
           </>

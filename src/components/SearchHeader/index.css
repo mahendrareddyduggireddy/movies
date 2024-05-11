@@ -7,6 +7,12 @@
   height: 9vh;
   background-color: transparent;
 }
+.search-style {
+  background-color: transparent;
+  border-style: solid;
+  border-width: 0px;
+  color: orangered;
+}
 .search-icon {
   background-color: transparent;
   border-style: solid;
@@ -42,4 +48,20 @@
   border-width: 1px;
   border-color: black;
   background-color: aqua;
+}
+@media screen and (max-width: 425px) {
+  .image-style {
+    height: 20px;
+    width: 50px;
+  }
+  .image-area {
+    height: 25px;
+    width: 25px;
+  }
+  .input-search {
+    width: 70px;
+  }
+  .search-input-style {
+    width: 35px;
+  }
 }

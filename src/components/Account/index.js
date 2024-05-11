@@ -27,9 +27,10 @@ const Account = props => {
         <hr />
         <div className="key-value">
           <p className="keys">plan details </p>
-          <p>
-            Premium<span className="span-container">Ultra HD</span>
-          </p>
+          <>
+            <p>Premium</p>
+            <p className="span-container">Ultra HD</p>
+          </>
         </div>
         <hr />
         <button type="button" onClick={btnFunction} className="logout-style">

@@ -33,3 +33,9 @@
   border-width: 0px;
   margin: 7px;
 }
+@media screen and (max-width: 425px) {
+  .item {
+    height: 75px;
+    width: 75px;
+  }
+}

@@ -3,10 +3,10 @@ import {Link} from 'react-router-dom'
 
 const Originals = props => {
   const {item} = props
-  const {title, backDrop, id} = item
+  const {name, posterPath, id} = item
   return (
     <Link to={`/movies/${id}`}>
-      <img src={backDrop} alt={title} className="og-image-container" />
+      <img src={posterPath} alt={name} className="og-image-container" />
     </Link>
   )
 }

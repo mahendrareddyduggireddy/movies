@@ -3,10 +3,10 @@ import {Link} from 'react-router-dom'
 
 const Trends = props => {
   const {item} = props
-  const {title, backDrop, id} = item
+  const {name, posterPath, id} = item
   return (
     <Link to={`/movies/${id}`}>
-      <img src={backDrop} alt={title} className="trend-image-container" />
+      <img src={posterPath} alt={name} className="trend-image-container" />
     </Link>
   )
 }

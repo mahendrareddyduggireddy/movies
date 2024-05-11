@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: flex-start;
   height: 100vh;
+  width: 100vw;
 }
 .account-header {
   background-color: black;
@@ -19,6 +20,29 @@
   align-items: flex-start;
   height: 65vh;
 }
+@media screen and (max-width: 320px) {
+  .account-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 25px;
+    align-items: flex-start;
+    height: 65vh;
+    width: 310px;
+  }
+}
+@media screen and (min-width: 375px), (min-width: 425px) {
+  .account-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 25px;
+    align-items: flex-start;
+    height: 65vh;
+    width: 360px;
+  }
+}
+
 .keys {
   font-family: 'Roboto';
   font-size: 22px;

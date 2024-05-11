@@ -56,6 +56,7 @@ const SearchHeader = props => {
           <img
             src="https://res.cloudinary.com/dxqfqtqnl/image/upload/v1714561832/Avatar1x_y2blqp.png"
             alt="avatar"
+            className="image-area"
           />
         </button>
       </div>

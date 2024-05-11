@@ -1,8 +1,6 @@
 .home-container {
-  width: 1405px;
-  height: 1300px;
-  gap: 0px;
-  opacity: 0px;
+  min-height: 100vh;
+  width: 1400px;
   background-color: #181818;
   color: white;
   padding-left: 100px;
@@ -42,7 +40,7 @@
 }
 .slider-container {
   width: 1109px;
-  height: 170px;
+  height: 175px;
   top: 704px;
   left: 166px;
   gap: 0px;

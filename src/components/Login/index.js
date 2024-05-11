@@ -46,7 +46,7 @@ class Login extends Component {
       <div className="login-container">
         <img
           src="https://res.cloudinary.com/dxqfqtqnl/image/upload/v1714387893/Group_73991x_q8xof1.png"
-          alt="movies"
+          alt="login website logo"
           className="logo-style"
         />
         <form onSubmit={this.submitFunc} className="form-container">
@@ -66,7 +66,7 @@ class Login extends Component {
             onChange={this.passwordFunc}
           />
           <button type="submit" className="submit-style">
-            Submit
+            Login
           </button>
           <p className="error">{em ? errMsg : ''}</p>
         </form>
