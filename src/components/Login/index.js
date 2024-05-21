@@ -50,7 +50,7 @@ class Login extends Component {
           className="logo-style"
         />
         <form onSubmit={this.submitFunc} className="form-container">
-          <h1 className="sub-heading">Login</h1>
+          <h1 className="login-sub-heading">Login</h1>
           <label htmlFor="username">USERNAME</label>
           <input
             type="text"

@@ -20,11 +20,13 @@ const SearchHeader = props => {
   return (
     <nav className="nav-container">
       <div className="items-container">
-        <img
-          src="https://res.cloudinary.com/dxqfqtqnl/image/upload/v1714387893/Group_73991x_q8xof1.png"
-          alt="movies"
-          className="image-style"
-        />
+        <Link to="/">
+          <img
+            src="https://res.cloudinary.com/dxqfqtqnl/image/upload/v1714387893/Group_73991x_q8xof1.png"
+            alt="movies"
+            className="image-style"
+          />
+        </Link>
         <Link to="/" className="text-style">
           Home
         </Link>
@@ -45,7 +47,7 @@ const SearchHeader = props => {
             onClick={searchFunction}
             className="search-icon"
           >
-            <HiOutlineSearch />
+            <HiOutlineSearch />{' '}
           </button>
         </div>
         <button

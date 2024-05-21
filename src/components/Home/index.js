@@ -15,7 +15,7 @@ class Home extends Component {
   state = {
     trendingList: [],
     originalsList: [],
-    originalItem: '',
+    originalItem: {},
     isLoading: true,
   }
 
@@ -93,31 +93,34 @@ class Home extends Component {
       <div className="home-container">
         {isLoading ? (
           <div className="spinner-container">
-            <div className="loader-container" testid="loader">
+            <div className="loader-container">
               <Loader type="TailSpin" color="#D81F26" height={50} width={50} />
             </div>
           </div>
         ) : (
-          <div
-            style={{
-              backgroundImage: `url(${originalItem.backDrop})`,
-              backgroundSize: 'cover',
-            }}
-            className="original-item-container"
-          >
-            <Header />
-            <div className="item-description">
-              <h1>{originalItem.title}</h1>
-              <p>{originalItem.overview}</p>
-              <button type="button">Play</button>
+          originalItem.backDrop !== undefined && (
+            <div
+              style={{
+                backgroundImage: `url(${originalItem.backDrop})`,
+                backgroundSize: 'cover',
+              }}
+              className="original-item-container"
+            >
+              <Header />
+              <div className="item-description">
+                <h1>{originalItem.title}</h1>
+                <p>{originalItem.overview}</p>
+                <button type="button">Play</button>
+              </div>
             </div>
-          </div>
+          )
         )}
+
         <div>
           <h2>Trending Now</h2>
           {isLoading ? (
             <div className="spinner-container">
-              <div className="loader-container" testid="loader">
+              <div className="loader-container">
                 <Loader
                   type="TailSpin"
                   color="#D81F26"
@@ -138,7 +141,7 @@ class Home extends Component {
           <h2>Originals</h2>
           {isLoading ? (
             <div className="spinner-container">
-              <div className="loader-container" testid="loader">
+              <div className="loader-container">
                 <Loader
                   type="TailSpin"
                   color="#D81F26"

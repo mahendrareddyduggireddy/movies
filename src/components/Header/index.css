@@ -25,10 +25,12 @@
 .image-style {
   height: 43px;
   width: 100px;
+  cursor: pointer;
 }
 .search-style {
   background-color: transparent;
   border-style: solid;
   border-width: 0px;
   color: orangered;
+  cursor: pointer;
 }
