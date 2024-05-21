@@ -20,8 +20,8 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    this.trendingFunc()
     this.originalFunc()
+    this.trendingFunc()
   }
 
   trendingFunc = async () => {
