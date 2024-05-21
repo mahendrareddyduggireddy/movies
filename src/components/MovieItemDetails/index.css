@@ -1,0 +1,67 @@
+.movie-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+.sub-heading {
+  color: green;
+  font-weight: 200;
+  font-size: 16px;
+}
+.heading {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 20px;
+  padding-left: 45px;
+}
+.movie-description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 94%;
+}
+.core-details-container {
+  display: flex;
+  justify-content: space-between;
+  width: 10vw;
+  align-items: center;
+  padding-left: 3px;
+  list-style-type: none;
+}
+.movie-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  justify-content: space-between;
+  padding: 1px;
+}
+.movie-item-ul-container {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+.movie-item-li-container {
+  height: 150px;
+  width: 150px;
+  margin: 8px;
+}
+.movie-item-image-container {
+  height: 100%;
+  width: 100%;
+}
+.extra-details-container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  align-items: space-between;
+}

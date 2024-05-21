@@ -1,0 +1,79 @@
+.account-route-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
+  width: 100vw;
+}
+.account-header {
+  background-color: black;
+}
+.account-footer-container {
+  background-color: black;
+}
+.account-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 25px;
+  align-items: flex-start;
+  height: 65vh;
+}
+@media screen and (max-width: 320px) {
+  .account-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 25px;
+    align-items: flex-start;
+    height: 65vh;
+    width: 310px;
+  }
+}
+@media screen and (min-width: 375px), (min-width: 425px) {
+  .account-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 25px;
+    align-items: flex-start;
+    height: 65vh;
+    width: 360px;
+  }
+}
+
+.keys {
+  font-family: 'Roboto';
+  font-size: 22px;
+  color: gainsboro;
+  margin: 10px;
+}
+.key-value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logout-style {
+  background-color: red;
+  color: white;
+  height: 28px;
+  width: 128px;
+  align-self: center;
+  border-style: solid;
+  border-radius: 7px;
+  border-width: 0px;
+  margin-top: 35px;
+}
+.span-container {
+  border-style: solid;
+  border-radius: 1px;
+  border-width: 2px;
+  border-color: black;
+  margin: 2px;
+}
+.account-head {
+  font-family: 'Bree Serif';
+  font-weight: 300;
+  margin: 12px;
+}
