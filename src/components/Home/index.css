@@ -29,7 +29,6 @@
   width: 1109px;
   height: 450px;
   gap: 0px;
-  opacity: 0px;
   margin: 0px;
   background-color: transparent;
 }
@@ -44,6 +43,5 @@
   left: 166px;
   gap: 0px;
   border-radius: 8px 0px 0px 0px;
-  opacity: 0px;
   background-color: #0d0d0d;
 }
